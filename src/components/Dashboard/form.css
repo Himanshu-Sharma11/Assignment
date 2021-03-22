@@ -1,0 +1,12 @@
+.eye {
+  position: absolute;
+  top: 65%;
+  right: 30px;
+}
+
+.table-head th {
+  font-weight: 400;
+  padding: 4px 6px;
+  background-color: rebeccapurple;
+  color: #fff;
+}

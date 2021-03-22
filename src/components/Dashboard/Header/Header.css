@@ -1,0 +1,82 @@
+.root {
+  height: 100vh;
+}
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 17%;
+  transition: all 1s ease;
+}
+
+#sidebar.active {
+  left: -100%;
+}
+
+div ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.section {
+  width: calc(100% - 17%);
+  margin-left: 17%;
+}
+.banner {
+  height: 15vh;
+  background: linear-gradient(
+      135deg,
+      rgba(140, 41, 245, 0.4),
+      rgba(242, 7, 245, 0.1)
+    ),
+    url(../../../images/code.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.underImage {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.underImage div:nth-child(1) {
+  height: 3px;
+  background-color: rgb(66, 20, 182);
+  width: 25%;
+}
+.underImage div:nth-child(2) {
+  height: 3px;
+  background-color: red;
+  width: 25%;
+}
+
+.underImage div:nth-child(3) {
+  height: 3px;
+  background-color: rgb(224, 154, 24);
+  width: 25%;
+}
+
+.underImage div:nth-child(4) {
+  height: 3px;
+  background-color: rgba(253, 167, 7, 0.884);
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+    margin-left: 0;
+  }
+  .side-nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 50%;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  #sidebar.active {
+    left: 0;
+  }
+}
